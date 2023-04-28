@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 400px;
+    margin-left: 800px;
   }
   .dashboard__container {
     display: flex;
@@ -19,6 +21,8 @@
     border: none;
     color: white;
     background-color: black;
+    width: 400px;
+    margin-left: 800px;
   }
   .dashboard div {
     margin-top: 7px;

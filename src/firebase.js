@@ -84,6 +84,8 @@ const registerWithEmailAndPassword = async (
       email,
       role,
       walletAddress,
+    }).then(() => {
+      logout();
     });
   } catch (err) {
     console.log(err);

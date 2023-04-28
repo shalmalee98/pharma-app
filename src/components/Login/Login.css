@@ -9,13 +9,43 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dcdcdc;
     padding: 30px;
+    align-self: baseline;
+  }
+
+  .backgroundImg {
+    height:948px;
+    background-image: url("http://127.0.0.1:8887/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .backgroundImg_login {
+    height:948px;
+    background-image: url("http://127.0.0.1:8887/background1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .login__textBox1 {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
   .login__textBox {
     padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
+    width: 376px;
+    margin-left: 800px;
+  }
+  .login__btn1 {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-color: black;
   }
   .login__btn {
     padding: 10px;
@@ -24,11 +54,42 @@
     border: none;
     color: white;
     background-color: black;
+    width: 400px;
+    margin-left: 800px;
+    font-size:15px; color:#ffffff; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
   }
   .login__google {
     background-color: #4285f4;
+    width: 400px;
+    margin-left: 800px;
   }
   .login div {
     margin-top: 7px;
   }
+  .nine h1 {
+    text-align:center; font-size:60px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .nine h1 span {
+    margin-top: 5px;
+      font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nine h1 span:after,.nine h1 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  
   

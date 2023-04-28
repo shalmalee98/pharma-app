@@ -7,10 +7,9 @@ import { query, collection, getDocs, where } from "firebase/firestore";
 function HomeScreen() {
   const [user, loading, error] = useAuthState(auth);
   const [name, setName] = useState("");
-  const [role, setRole] = useState(Number);
   const navigate = useNavigate();
   const routes = {
-    Manufacturer: "/admin",
+    Manufacturer: "/manufacturer",
     Pharmacist: "/pharmacist",
     Buyer: "/buyer",
     Admin: "/admin",
@@ -22,8 +21,7 @@ function HomeScreen() {
       const data = doc.docs[0].data();
       console.log(data);
       setName(data.name);
-      setRole(data.role);
-      return navigate(routes[data.role]);
+      navigate(routes[data.role], { state: data });
     } catch (err) {
       console.error(err);
       alert("An error occured while fetching user data");
@@ -32,7 +30,7 @@ function HomeScreen() {
   useEffect(() => {
     if (loading) return;
     if (!user) return navigate("/");
-    fetchUserName();
+    else fetchUserName();
   }, [user, loading]);
   return (
     <div className="dashboard">
