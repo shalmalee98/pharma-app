@@ -78,7 +78,7 @@ function Register() {
     <div className="backgroundImg_login">
       <div class="nine">
         <h1 style={{ marginTop: "0px", paddingTop: "4%" }}>
-          Register<span>Tagline Keywords</span>
+          Register<span>Pharmaceutial Supply Chain</span>
         </h1>
       </div>
       <div className="login">

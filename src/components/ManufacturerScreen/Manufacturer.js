@@ -153,7 +153,7 @@ function Manufacturer() {
       <div>
         <div class="nine">
           <h1 style={{ marginTop: "0px", paddingTop: "4%" }}>
-            Manufacturer<span>Tagline Keywords</span>
+            Manufacturer<span>Pharmaceutial Supply Chain</span>
           </h1>
         </div>
         <div style={{ paddingRight: "10%", paddingTop: "2%" }}>

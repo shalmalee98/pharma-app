@@ -32,7 +32,7 @@ function Login() {
     <div className="backgroundImg_login">
       <div class="nine">
         <h1 style={{ marginTop: "0px", paddingTop: "4%" }}>
-          Login<span>Tagline Keywords</span>
+          Login<span>Pharmaceutial Supply Chain</span>
         </h1>
       </div>
       <div className="login">

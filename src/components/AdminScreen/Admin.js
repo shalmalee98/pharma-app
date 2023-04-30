@@ -41,7 +41,7 @@ function Admin() {
       <div>
         <div class="nine">
           <h1 style={{ marginTop: "0px", paddingTop: "4%" }}>
-            Admin<span>Tagline Keywords</span>
+            Admin<span>Pharmaceutial Supply Chain</span>
           </h1>
         </div>
         <div style={{ paddingRight: "10%", paddingTop: "2%" }}>
