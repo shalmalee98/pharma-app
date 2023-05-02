@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Directory - PharmaSCDapp which has 2 directories - 1) pharmaSC-contract 2) pharma-app
+cd pharma-app
+npm install 
+npm start (react app will run on localhost://3000)
+
+cd pharmaSC-contract
+truffle migrate --reset\
+paste the smart contract address from the delpoyed contract to the constants file in the src folder inside the pharma-app
+
+Open a Ganache node
+Copy & paste private key of first address on the node to import an account on metamask
+Also, copy the address and paste it in the address of the firebase admin account
+
+Bingo! you are live on our website (launch it on localhost://3000) 
+
