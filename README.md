@@ -87,5 +87,8 @@ Deploy react app
 => firebase deploy
 Once it is deployed, firebase will give you a unique hosting URL where the deployed app is located
 
+### Admin details
+email - admin@gmail.com
+password = 123456
 
 
