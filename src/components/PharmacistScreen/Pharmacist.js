@@ -16,7 +16,7 @@ import {
 } from "@mui/material";
 import { contractAddress } from "../../constants";
 
-const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
+const web3 = new Web3(Web3.givenProvider);
 const pharmaContract = new web3.eth.Contract(
   PharmaSupplyChain,
   contractAddress

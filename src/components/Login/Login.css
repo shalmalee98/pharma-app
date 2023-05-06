@@ -15,14 +15,14 @@
 
   .backgroundImg {
     height:948px;
-    background-image: url("http://127.0.0.1:8887/background.jpeg");
+    background-image: url("../PharmacistScreen/background.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
   .backgroundImg_login {
     height:948px;
-    background-image: url("http://127.0.0.1:8887/background1.jpeg");
+    background-image: url("../PharmacistScreen/background1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

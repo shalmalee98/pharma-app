@@ -28,7 +28,7 @@ function HomeScreen() {
     }
   };
   useEffect(() => {
-    if (loading) return;
+    // if (loading) return;
     if (!user) return navigate("/");
     else fetchUserName();
   }, [user, loading]);
