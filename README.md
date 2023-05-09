@@ -31,15 +31,19 @@ Bingo! you are live on our website (launch it on localhost://3000)
 
 
 ### Deploy smart contract on truffle
-=> npm install -g truffle
-Open project directory of smart contract in terminal with truffle project created
-=> npm intsall @truffle/hdwallet-provider
-create the .env file
+1. => npm install -g truffle
+
+2. Open project directory of smart contract in terminal with truffle project created
+=> npm install @truffle/hdwallet-provider
+
+3. create the .env file
 => npm install dotenv
-.env file shoulkd contain the following:
+
+4. .env file should contain the following:
 INFURA_API_KEY = "https://sepolia.infura.io/v3/<Your-API-Key>"
 MNEMONIC = "<Your-MetaMask-Secret-Recovery-Phrase>"
-Add the following to truffle-config.js:
+
+5. Add the following to truffle-config.js:
 => require('dotenv').config();
 => const HDWalletProvider = require('@truffle/hdwallet-provider');
 => const { INFURA_API_KEY, MNEMONIC } = process.env;
@@ -58,32 +62,34 @@ Add the following to truffle-config.js:
   }
 };
 
-Compile the smart contract 
+6. Compile the smart contract 
 => truffle compile
-Deploy the smart contract
+
+7. Deploy the smart contract
 => truffle migrate --network sepolia
 
 ### Changes in react app(node js):
-Use web3, copy abi file into abi folder under src directory
-Declare web3 to access wallet inside our dapp
+1. Use web3, 
+2. copy abi file into abi folder under src directory
+3. Declare web3 to access wallet inside our dapp
 => const web3 = new Web3(Web3.givenProvider);
-Change contract address from constants file
-Run the frontend 
+4. Change contract address from constants file
+5. Run the frontend 
 => npm start
 
 ### Hosting react app on firebase:
-Create a project in firebase console online
+1. Create a project in firebase console online
 => npm install -g firebase-tools
-Login to firebase in your terminal
+2. Login to firebase in your terminal
 => firebase login
-=> npm run build
-=> firebase init
-1. Select option hosting: configure and deploy Firebase hosting using GitHub
-2. Answer build to deploy assets
-3. Single page application? Yes
-4. Overwrite existing index.html? No
-5. You'll see two new files .firebaserc, firebase.json
-Deploy react app
+3. => npm run build
+4. => firebase init
+    1. Select option hosting: configure and deploy Firebase hosting using GitHub
+    2. Answer build to deploy assets
+    3. Single page application? Yes
+    4. Overwrite existing index.html? No
+    5. You'll see two new files .firebaserc, firebase.json
+5. Deploy react app
 => firebase deploy
 Once it is deployed, firebase will give you a unique hosting URL where the deployed app is located
 
